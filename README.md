@@ -3,16 +3,18 @@ Thomas Schmied <sup>**1**</sup>, Markus Hofmarcher <sup>**1**</sup>, Fabian Pais
 
 <sup>**1**</sup>ELLIS Unit Linz and LIT AI Lab, Institute for Machine Learning, Johannes Kepler University Linz, Austria\
 <sup>**2**</sup>DeepMind\
-<sup>**4**</sup>Institute of Advanced Research in Artificial Intelligence (IARAI), Vienna, Austria
+<sup>**3**</sup>Institute of Advanced Research in Artificial Intelligence (IARAI), Vienna, Austria
+
+:warning: **UNDER CONSTRUCTION** :warning:
 
 This repository will contain the source code and link to the generated datasets for our paper **"Learning to Modulate pre-trained Models in RL"** accepted at the [Reincarnating RL Workshop](https://reincarnating-rl.github.io/) at ICLR 2023. The paper is available [here](https://openreview.net/forum?id=Us6BtPZGei3). 
 
-:warning: ** UNDER CONSTRUCTION** :warning:
 
 ## Approach
 ![Learning-to-Modulate](./img/l2m.png)
 
 ## Accessing the Data
+TBD
 
 ## Installation
 TBD
