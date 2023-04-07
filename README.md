@@ -23,5 +23,15 @@ TBD
 TBD
 
 ## Citation
-TBD
+Workshop paper: 
+```
+@inproceedings{schmied2023learning,
+  title={Learning to Modulate pre-trained Models in RL},
+  author={Schmied, Thomas and Hofmarcher, Markus and Paischer, Fabian and Pascanu, Razvan and Hochreiter, Sepp},
+  booktitle={Workshop on Reincarnating Reinforcement Learning at ICLR}
+  year={2023},
+  url={https://openreview.net/forum?id=Us6BtPZGei3}
+}
+```
+
 
