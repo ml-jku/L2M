@@ -1,0 +1,5 @@
+kind: "SAC"
+policy: "MlpPolicy"
+extra_encoder: False
+share_features_extractor: True
+features_extractor_arch:

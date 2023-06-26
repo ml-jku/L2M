@@ -1,0 +1,26 @@
+kind: "DT"
+learning_starts: 0
+batch_size: 64
+gradient_steps: 0
+stochastic_policy: True
+learning_rate: 0.0001
+loss_fn: "mse"
+eval_context_len: 20
+offline_steps: 0
+buffer_max_len_type: "transition"
+buffer_size: 1000000 # 20M --> 2M per task
+target_return_type: predefined
+ent_coef: 0
+
+load_path:
+  dir_path: ${MODELS_DIR}
+  file_name: model_medium64_mt40_v2_s_rtg_a_r.zip
+frozen: True
+
+defaults:
+  - huggingface: dt_medium_64
+
+huggingface:
+  # max_ep_len: 201
+  output_attentions: True
+  activation_function: gelu

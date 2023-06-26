@@ -1,0 +1,31 @@
+kind: "DT"
+learning_starts: 0
+batch_size: 64
+gradient_steps: 1
+stochastic_policy: False
+loss_fn: "mse"
+eval_context_len: 20
+ent_coef: 0.0
+offline_steps: ${run_params.total_timesteps}
+buffer_max_len_type: "transition"
+buffer_size: 80000000 # 8e7
+buffer_weight_by: uniform 
+target_return_type: predefined
+replay_buffer_kwargs:
+  num_workers: 8
+  pin_memory: False
+  init_top_p: 1
+use_prompt_buffer: True
+separate_prompt_embed: True
+prompt_buffer_kwargs:
+  num_seq_per_prompt: 1
+  num_trjs_per_task: 50
+  init_top_p: 0.005 # amounts 50 trjs
+  multitask_batch: True
+defaults:
+  - huggingface: dt_medium_64
+  - data_paths: mt40_v2_cwnet_2M # all MT50 tasks except the CW10 tasks.
+  - prompt_data_paths: mt40_v2_cwnet_2M
+huggingface:
+  # max_ep_len: 201
+  activation_function: gelu

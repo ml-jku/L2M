@@ -1,0 +1,20 @@
+kind: "DDT"
+# should be same as batch size
+learning_starts: 1500
+buffer_size: 1000
+batch_size: 64
+gradient_steps: 10
+stochastic_policy: True
+loss_fn: "ce"
+learning_rate: 0.0004
+lr_entropy: 0.0004
+eval_context_len: 5
+
+huggingface:
+  max_length: 20
+  # n_embd is not actually used! hidden_size is also used for the embedding dim in the DT implementation...
+  n_embd: 512
+  n_layer: 4
+  n_head: 4
+  max_ep_len: 1000
+  hidden_size: 128

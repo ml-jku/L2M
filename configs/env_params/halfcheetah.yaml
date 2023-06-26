@@ -1,0 +1,8 @@
+envid: HalfCheetah-v3
+reward_scale: 1000
+target_return: 6000
+num_envs: 1
+norm_obs: False
+record: True
+record_freq: 250000
+record_length: 1000

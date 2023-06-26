@@ -1,0 +1,3 @@
+base: ${DATA_DIR}/metaworld_v2_cwnet_2M
+defaults:
+  - names: mt50_v2

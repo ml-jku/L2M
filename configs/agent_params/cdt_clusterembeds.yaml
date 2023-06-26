@@ -1,0 +1,30 @@
+kind: "MDDT"
+use_critic: False
+learning_starts: 0
+batch_size: 256
+gradient_steps: 1
+stochastic_policy: False
+loss_fn: "ce"
+eval_context_len: 5
+offline_steps: 1
+buffer_max_len_type: "transition"
+buffer_size: 2000000
+buffer_weight_by: len 
+target_return_type: predefined
+load_path:
+  dir_path: ${MODELS_DIR}
+  file_name: dt_mediumplus_64.zip
+defaults:
+  - huggingface: dt_mediumplus_64
+  - data_paths: mt40_v2_cwnet_2M   # all MT50 tasks except the CW10 tasks.
+  - model_kwargs: multi_domain_mtdmc
+  - replay_buffer_kwargs: mtdmc_ft
+
+model_kwargs: 
+  relative_pos_embds: False
+
+huggingface:
+  max_ep_len: 1000
+  activation_function: gelu
+  output_hidden_states: True
+  max_length: 5

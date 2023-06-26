@@ -1,0 +1,10 @@
+## on CentOS:
+#d3rlpy==1.0.0
+#numpy==1.19.5
+## on Windows or Ubuntu:
+d3rlpy==1.1.0
+numpy==1.19.5
+git+https://github.com/takuseno/d4rl-atari
+gym[atari]==0.24.1
+#autorom[accept-rom-license]
+tqdm==4.64.0

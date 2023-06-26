@@ -1,0 +1,95 @@
+# Hydra does not support having multiple defaults lists in the same file
+# therefore, need to paste in all atari/mt40_v2 names here
+atari: 
+  base: ${SSD_DATA_DIR}/atari_1M
+  names: 
+    # - alien  
+    - amidar
+    - assault
+    - asterix
+    - atlantis
+    - bank-heist
+    - battle-zone
+    - beam-rider
+    - boxing
+    - breakout
+    - carnival
+    - centipede
+    - chopper-command
+    - crazy-climber
+    - demon-attack
+    - double-dunk
+    - enduro
+    - fishing-derby
+    - freeway
+    - frostbite
+    - gopher
+    - gravitar
+    - hero
+    - ice-hockey
+    - jamesbond
+    - kangaroo
+    - krull
+    - kung-fu-master
+    # - ms-pacman 
+    - name-this-game
+    - phoenix
+    # - pong
+    - pooyan
+    - qbert
+    - riverraid
+    - road-runner
+    - robotank
+    - seaquest
+    # - space-invaders
+    # - star-gunner
+    - time-pilot
+    - up-n-down
+    - video-pinball
+    - wizard-of-wor
+    - yars-revenge
+    - zaxxon
+
+mt40_v2: 
+  base: ${DATA_DIR}/metaworld_v2_cwnet_2M
+  names: 
+    - assembly-v2.pkl
+    - button-press-v2.pkl
+    - disassemble-v2.pkl
+    - plate-slide-side-v2.pkl
+    - door-lock-v2.pkl
+    - door-unlock-v2.pkl
+    - pick-place-v2.pkl
+    - drawer-close-v2.pkl
+    - coffee-pull-v2.pkl
+    - handle-pull-v2.pkl
+    - peg-insert-side-v2.pkl
+    - door-close-v2.pkl
+    - button-press-topdown-v2.pkl
+    - lever-pull-v2.pkl
+    - reach-v2.pkl
+    - door-open-v2.pkl
+    - sweep-v2.pkl
+    - box-close-v2.pkl
+    - button-press-wall-v2.pkl
+    - basketball-v2.pkl
+    - soccer-v2.pkl
+    - handle-press-v2.pkl
+    - coffee-button-v2.pkl
+    - faucet-open-v2.pkl
+    - plate-slide-v2.pkl
+    - reach-wall-v2.pkl
+    - handle-pull-side-v2.pkl
+    - drawer-open-v2.pkl
+    - dial-turn-v2.pkl
+    - sweep-into-v2.pkl
+    - bin-picking-v2.pkl
+    - coffee-push-v2.pkl
+    - pick-out-of-hole-v2.pkl
+    - button-press-topdown-wall-v2.pkl
+    - plate-slide-back-side-v2.pkl
+    - plate-slide-back-v2.pkl
+    - stick-push-v2.pkl
+    - hand-insert-v2.pkl
+    - window-open-v2.pkl
+    - pick-place-wall-v2.pkl

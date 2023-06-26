@@ -1,0 +1,9 @@
+envid: "MiniHack-Room-5x5-v0"
+reward_scale: 1
+target_return: 1
+num_envs: 1
+norm_obs: False
+record: False
+record_freq: 1000000
+record_length: 2000
+#frame_stack: 1

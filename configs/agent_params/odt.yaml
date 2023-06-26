@@ -1,0 +1,16 @@
+kind: "DT"
+# should be same as batch size
+learning_starts: 1500
+buffer_size: 1000
+batch_size: 64
+gradient_steps: 10
+stochastic_policy: True
+loss_fn: "mse"
+learning_rate: 0.0004
+lr_entropy: 0.0004
+eval_context_len: 5
+
+
+defaults:
+  - huggingface: dt_medium
+

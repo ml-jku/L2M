@@ -1,0 +1,8 @@
+envid: LunarLander-v2
+reward_scale: 1
+target_return: 500
+num_envs: 1
+norm_obs: False
+record: True
+record_freq: 1000000
+record_length: 2000

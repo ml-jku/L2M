@@ -1,0 +1,6 @@
+kind: domain
+max_act_dim: 6
+max_state_dim: 204
+num_workers: 16
+pin_memory: False
+init_top_p: 1

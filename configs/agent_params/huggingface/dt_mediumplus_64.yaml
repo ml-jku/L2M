@@ -1,0 +1,8 @@
+max_length: 20
+# n_embd is not actually used! hidden_size is also used for the embedding dim in the DT implementation...
+n_embd: 512
+n_layer: 6
+n_head: 12
+max_ep_len: 1000
+hidden_size: 768
+output_attentions: True

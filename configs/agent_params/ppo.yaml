@@ -1,0 +1,5 @@
+kind: "PPO"
+policy: "CnnPolicy"
+n_steps: 256
+n_epochs: 3
+ent_coef: 0.01

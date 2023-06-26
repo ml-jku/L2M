@@ -1,0 +1,3 @@
+kind: cosine_restart
+T_0: 200000
+eta_min: 0.000001

@@ -1,0 +1,4 @@
+# CW10 tasks:
+base: ${DATA_DIR}/metaworld_v2_cwnet_2M
+defaults:
+  - names: cw10_v2

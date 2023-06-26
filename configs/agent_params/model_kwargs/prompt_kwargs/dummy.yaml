@@ -1,0 +1,5 @@
+kind: dummy
+pool_size: 100
+length: 25
+embed_key: mean
+prob: 1.0

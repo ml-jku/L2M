@@ -1,0 +1,5 @@
+reward_condition: True
+tokenize_a: True
+tokenize_rtg: False 
+action_channels: 64
+relative_pos_embds: False

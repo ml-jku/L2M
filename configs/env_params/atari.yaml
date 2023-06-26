@@ -1,0 +1,11 @@
+envid: PongNoFrameskip-v4
+reward_scale: 20
+target_return: 21
+num_envs: 1
+norm_obs: False
+record: False
+record_freq: 1000000
+record_length: 2000
+eval_env_names: "atari41"
+env_kwargs: 
+  full_action_space: True

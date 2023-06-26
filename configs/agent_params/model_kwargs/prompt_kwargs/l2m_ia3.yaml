@@ -1,0 +1,7 @@
+kind: l2m_ia3
+pool_size: 30
+embed_key: mean
+prob: 1.0
+init_keys: uniform
+agg_token: "s"
+count_penalty: True

@@ -1,0 +1,25 @@
+# atari specific
+envid: reach-v2
+target_return: 20000
+num_envs: 1
+norm_obs: False
+record: False
+record_freq: 1000000
+record_length: 2000
+
+# Meta-world specific 
+randomization: random_init_all
+remove_task_ids: True
+add_task_ids: False
+
+# DMC specific 
+dmc_env_kwargs: 
+  flatten_obs: False
+
+# multi domain evaluation
+eval_env_names: "cw10v2_dmc6"
+
+reward_scale:
+  mt50: 200
+  dmcontrol: 100
+  cl: [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 100, 100, 100, 100, 100, 100 ]

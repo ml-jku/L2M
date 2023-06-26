@@ -1,0 +1,7 @@
+reward_condition: True
+tokenize_a: False
+relative_pos_embds: False
+# tokenize_rtg: True 
+# rtg_tok_kwargs: 
+#   min_val: -20
+#   max_val: 100 

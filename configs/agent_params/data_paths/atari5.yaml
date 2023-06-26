@@ -1,0 +1,3 @@
+base: ${SSD_DATA_DIR}/atari_1M
+defaults:
+  - names: atari5

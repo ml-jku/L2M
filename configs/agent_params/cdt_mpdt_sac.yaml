@@ -1,0 +1,42 @@
+kind: "MPDT"
+learning_starts: 10000
+batch_size: 64
+stochastic_policy: True
+learning_rate: 0.001
+lr_entropy: 0.001
+critic_lr: 0.001
+use_critic: True
+loss_fn: "sac"
+eval_context_len: 20
+buffer_max_len_type: "transition"
+buffer_size: 1000000
+steps_per_task: 1000000 # same as run_params.steps_per_task
+target_return_type: predefined
+load_path:
+  dir_path: ${MODELS_DIR}
+  file_name: model_small64_mt40_v2.zip # DT-small (3 layer, 2 head, embed/head 128)
+frozen: True
+gradient_steps: -1
+max_grad_steps: 200
+init_egreedy: False
+critic_reward_scale: 1
+critic_gamma: 0.99
+critic_arch: [256,256,256]
+critic_kwargs:
+  cw_net: True
+learnable_prompt: True
+pull_constraint_coef: 0.5
+
+defaults:
+  - huggingface: dt_small
+  - prompt_kwargs: l2p
+
+huggingface:
+  # max_ep_len: 201
+  activation_function: gelu
+
+prompt_kwargs:
+  n_layer: ${agent_params.huggingface.n_layer}
+  n_head: ${agent_params.huggingface.n_head}
+
+

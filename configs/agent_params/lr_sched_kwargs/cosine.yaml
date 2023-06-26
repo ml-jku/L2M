@@ -1,0 +1,4 @@
+kind: cosine
+T_max: ${run_params.total_timesteps}
+#T_max: 150000
+eta_min: 0.000001

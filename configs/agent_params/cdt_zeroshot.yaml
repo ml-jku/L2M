@@ -1,0 +1,23 @@
+kind: "DT"
+learning_starts: 0
+batch_size: 64
+gradient_steps: 0
+stochastic_policy: True
+loss_fn: "mse"
+eval_context_len: 20
+buffer_max_len_type: "transition"
+buffer_size: 1000000
+steps_per_task: 1000000 # same as run_params.steps_per_task
+target_return_type: predefined
+
+load_path:
+  dir_path: ${MODELS_DIR}
+  file_name: model_small_mt40_50K_notaskids_cwnet_new.zip # DT-small (3 layer, 2 head, embed/head 128)
+
+frozen: True
+
+defaults:
+  - huggingface: dt_small
+huggingface:
+  # max_ep_len: 201
+  activation_function: gelu

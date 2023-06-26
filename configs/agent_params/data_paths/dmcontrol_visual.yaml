@@ -1,0 +1,5 @@
+base: ${SSD_DATA_DIR}/dm_control_visual
+names: 
+  - cheetah_run
+  - humanoid_walk
+  - walker_walk

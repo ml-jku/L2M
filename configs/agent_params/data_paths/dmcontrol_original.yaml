@@ -1,0 +1,29 @@
+base: ${DATA_DIR}/dm_control_1M_v3
+names: 
+  - acrobot_swingup.pkl
+  - ball_in_cup_catch.pkl
+  - cartpole_balance.pkl
+  - cartpole_swingup.pkl
+  - cheetah_run.pkl
+  - finger_spin.pkl
+  - finger_turn_easy.pkl
+  - finger_turn_hard.pkl
+  - fish_swim.pkl
+  - fish_upright.pkl
+  - hopper_hop.pkl
+  - hopper_stand.pkl
+  - humanoid_run.pkl
+  - humanoid_stand.pkl
+  - humanoid_walk.pkl
+  - manipulator_bring_ball.pkl
+  - manipulator_insert_ball.pkl
+  - manipulator_insert_peg.pkl
+  - pendulum_swingup.pkl
+  - point_mass_easy.pkl
+  - reacher_easy.pkl
+  - reacher_hard.pkl
+  - swimmer_swimmer15.pkl
+  - swimmer_swimmer6.pkl
+  - walker_run.pkl
+  - walker_stand.pkl
+  - walker_walk.pkl

@@ -1,0 +1,16 @@
+kind: "ContinualSAC"
+policy: "MlpPolicy"
+extra_encoder: False
+share_features_extractor: True
+features_extractor_arch:
+steps_per_task: 1000000
+learning_starts: 1000
+train_freq: 50
+gradient_steps: 50
+batch_size: 128
+reward_scale: 1
+#target_entropy: 0.089
+policy_kwargs:
+  cw_net: True
+  net_arch: [256,256,256]
+  squash: True

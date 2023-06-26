@@ -1,0 +1,8 @@
+kind: hopfield
+embed_key: mean
+hidden_size: 64
+pool_size: 500
+top_k: 5
+# beta param (hparam search on this)
+scaling:
+prob: 1.0

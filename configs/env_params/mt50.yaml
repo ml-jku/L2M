@@ -1,0 +1,10 @@
+envid: reach-v2
+reward_scale: 200
+target_return: 20000
+num_envs: 1
+norm_obs: False
+record: False
+record_freq: 250000
+record_length: 1000
+randomization: random_init_all
+add_task_ids: False

@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# custom
+./postprocessing/figures/*
+./postprocessing/hidden_states/*
+./postprocessing/results/*
+./postprocessing/tables/*
+.idea
+.vscode

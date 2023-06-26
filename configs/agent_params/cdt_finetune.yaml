@@ -1,0 +1,33 @@
+kind: "UDT"
+learning_starts: 10000
+batch_size: 64
+stochastic_policy: True
+learning_rate: 0.0001
+lr_entropy: 0.0001
+critic_lr: 0.0001
+use_critic: True
+loss_fn: "sac"
+eval_context_len: 20
+buffer_max_len_type: "transition"
+buffer_size: 1000000
+steps_per_task: 1000000 # same as run_params.steps_per_task
+target_return_type: predefined
+load_path:
+  dir_path: ${MODELS_DIR}
+  file_name: model_small_mt40_50K_notaskids_cwnet_new.zip # DT-small (3 layer, 2 head, embed/head 128)
+#frozen: False
+
+gradient_steps: -1
+max_grad_steps: 50
+critic_reward_scale: 1
+
+critic_gamma: 0.99
+critic_arch: [256,256,256]
+critic_kwargs:
+  cw_net: True
+
+defaults:
+  - huggingface: dt_small
+huggingface:
+  # max_ep_len: 200
+  activation_function: gelu

@@ -1,0 +1,43 @@
+LOG_DIR: ../logs
+DATA_DIR: ../data
+SSD_DATA_DIR: ../data
+MODELS_DIR: ../models
+
+# directory creation is handled by Hydra
+hydra:
+  sweep:
+    dir: ${LOG_DIR}/${experiment_name}/${now:%Y-%m-%d_%H-%M-%S}
+    subdir: ${maybe_split:${hydra.job.override_dirname}}/seed=${seed}
+  run:
+    dir: ${LOG_DIR}/${experiment_name}/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    config:
+      override_dirname:
+        exclude_keys:
+          - seed
+
+# defaults for variable components --> agent_params, env_params
+defaults:
+  - agent_params: odt
+  - env_params: mujoco_gym
+  - eval_params: base
+  - run_params: base
+
+# General
+experiment_name: test
+device: "auto"
+seed: 42
+# Hydra does the logging for us
+logdir: '.'
+use_wandb: True
+
+wandb_params:
+  project: "MDDT"
+  sync_tensorboard: True
+  monitor_gym: True
+  save_code: True
+
+wandb_callback_params:
+  gradient_save_freq: 250
+  verbose: 1
+  model_save_path:

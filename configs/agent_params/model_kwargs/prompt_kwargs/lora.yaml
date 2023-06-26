@@ -1,0 +1,6 @@
+kind: lora
+rank: 8
+mod_ff: True
+pool_size: 100
+embed_key: mean
+prob: 1.0

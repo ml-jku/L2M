@@ -1,0 +1,4 @@
+kind: cyclic
+base_lr: 0.0001
+max_lr: 0.001
+step_size_up: 100000

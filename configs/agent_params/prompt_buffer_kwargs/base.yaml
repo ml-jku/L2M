@@ -1,0 +1,3 @@
+num_seq_per_prompt: 1
+num_trjs_per_task: 250
+init_top_p: 0.025 # amounts 50 trjs

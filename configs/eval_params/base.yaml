@@ -1,0 +1,5 @@
+use_eval_callback: False
+n_eval_episodes: 10
+eval_freq: 10000
+max_no_improvement_evals: 0
+deterministic: False

@@ -1,0 +1,4 @@
+num_seq_per_prompt: 1
+num_trjs_per_task: 50
+init_top_p: 0.005 # amounts 50 trjs
+multitask_batch: True

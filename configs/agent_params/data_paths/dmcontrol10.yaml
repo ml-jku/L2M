@@ -1,0 +1,3 @@
+base: ${DATA_DIR}/dm_control_1M_v3_full
+defaults:
+  - names: dmcontrol10

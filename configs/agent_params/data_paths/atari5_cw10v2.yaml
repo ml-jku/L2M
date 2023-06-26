@@ -1,0 +1,26 @@
+# Hydra does not support having multiple defaults lists in the same file
+# therefore, need to paste in all names here
+mt40_v2: 
+  base: ${DATA_DIR}/metaworld_v2_cwnet_2M
+  names: 
+    - hammer-v2.pkl
+    - push-wall-v2.pkl
+    - faucet-close-v2.pkl
+    - push-back-v2.pkl
+    - stick-pull-v2.pkl
+    - handle-press-side-v2.pkl
+    - push-v2.pkl
+    - shelf-place-v2.pkl
+    - window-close-v2.pkl
+    - peg-unplug-side-v2.pkl 
+    
+
+atari: 
+  base: ${SSD_DATA_DIR}/atari_1M
+  names: 
+    # same ones as used in MGDT
+    - alien  
+    - ms-pacman 
+    - pong
+    - space-invaders
+    - star-gunner

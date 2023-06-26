@@ -1,0 +1,2 @@
+kind: "TD3"
+policy: "MlpPolicy"

@@ -1,0 +1,5 @@
+kind: ia3
+pool_size: 100
+embed_key: mean
+prob: 1.0
+mod_embeds: True

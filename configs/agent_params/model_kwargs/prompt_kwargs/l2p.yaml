@@ -1,0 +1,8 @@
+kind: l2p
+pool_size: 100
+length: 5
+embed_key: mean
+top_k: 5
+prob: 1.0
+agg_token: "s"
+count_penalty: True

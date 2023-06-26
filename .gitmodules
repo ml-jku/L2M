@@ -1,0 +1,3 @@
+[submodule "continual_world"]
+	path = continual_world
+	url = https://github.com/awarelab/continual_world.git

@@ -1,0 +1,3 @@
+log_interval: 1000
+# 6 DMC tasks, each 100K steps = 600K steps
+total_timesteps: 600000

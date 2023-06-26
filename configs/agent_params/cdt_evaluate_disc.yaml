@@ -1,0 +1,33 @@
+kind: "MDDT"
+use_critic: False
+learning_starts: 0
+batch_size: 256
+gradient_steps: 0
+stochastic_policy: False
+loss_fn: "ce"
+eval_context_len: 5
+ent_coef: 0.0
+offline_steps: ${run_params.total_timesteps}
+buffer_max_len_type: "transition"
+buffer_size: 80000000 # 8e7
+buffer_weight_by: len 
+target_return_type: predefined
+warmup_steps: 4000
+replay_buffer_kwargs:
+  num_workers: 16
+  pin_memory: False
+  init_top_p: 1
+lr_sched_kwargs: 
+  kind: cosine
+  T_max: ${run_params.total_timesteps}
+load_path:
+  dir_path: ${MODELS_DIR}/multi_domain
+  file_name: dt_mediumplus_64.zip
+frozen: True
+defaults:
+  - huggingface: dt_mediumplus_64
+  - model_kwargs: multi_domain
+huggingface:
+  # max_ep_len: 201
+  activation_function: gelu
+  max_length: 5

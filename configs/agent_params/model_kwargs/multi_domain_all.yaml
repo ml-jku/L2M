@@ -1,0 +1,8 @@
+reward_condition: True
+tokenize_a: True
+tokenize_rtg: False 
+action_channels: 64
+discrete_actions: 18
+state_dim: 204
+image_shape: [1,84,84]
+relative_pos_embds: False

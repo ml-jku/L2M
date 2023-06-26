@@ -1,0 +1,25 @@
+# atari specific
+envid: PongNoFrameskip-v4
+target_return: 21
+num_envs: 1
+norm_obs: False
+record: False
+record_freq: 1000000
+record_length: 2000
+env_kwargs: 
+  full_action_space: True 
+dmc_env_kwargs:
+  flatten_obs: False 
+
+# Meta-world specific 
+randomization: random_init_all
+remove_task_ids: True
+add_task_ids: False
+
+# multi domain evaluation
+eval_env_names: "atari41_mt40v2_dmc10"
+
+reward_scale:
+  atari: 20
+  mt50: 200
+  dmcontrol: 100

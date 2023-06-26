@@ -1,0 +1,33 @@
+kind: "UDTWithEWC"
+use_critic: False
+learning_starts: 0
+batch_size: 64
+gradient_steps: 1
+stochastic_policy: True
+learning_rate: 0.001
+loss_fn: "mse"
+eval_context_len: 20
+offline_steps: ${run_params.total_timesteps}
+buffer_max_len_type: "transition"
+buffer_size: 20000000 # 20M --> 2M per task
+target_return_type: predefined
+ent_coef: 0
+warmup_steps: 1000
+
+replay_buffer_kwargs:
+  num_workers: 8
+  pin_memory: False
+  init_top_p: 1
+
+load_path:
+  dir_path: ${MODELS_DIR}
+  file_name: model_small64_mt40_v2.zip # DT-small (3 layer, 2 head, embed/head 128)
+
+defaults:
+  - huggingface: dt_small
+  - data_paths: cw10_v2_cwnet_2M
+
+huggingface:
+  # max_ep_len: 201
+  output_attentions: True
+  activation_function: gelu

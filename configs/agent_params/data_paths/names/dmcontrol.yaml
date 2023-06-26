@@ -1,0 +1,27 @@
+- acrobot_swingup.npz
+- ball_in_cup_catch.npz
+- cartpole_balance.npz
+- cartpole_swingup.npz
+- cheetah_run.npz
+- finger_spin.npz
+- finger_turn_easy.npz
+- finger_turn_hard.npz
+# - fish_swim.npz
+- fish_upright.npz
+# - hopper_hop.npz
+- hopper_stand.npz
+# - humanoid_run.npz
+# - humanoid_stand.npz
+# - humanoid_walk.npz
+# - manipulator_bring_ball.npz
+# - manipulator_insert_ball.npz
+# - manipulator_insert_peg.npz
+- pendulum_swingup.npz
+- point_mass_easy.npz
+- reacher_easy.npz
+- reacher_hard.npz
+# - swimmer_swimmer15.npz
+# - swimmer_swimmer6.npz
+- walker_run.npz
+- walker_stand.npz
+- walker_walk.npz

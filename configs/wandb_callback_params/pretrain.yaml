@@ -1,0 +1,5 @@
+  gradient_save_freq: 250
+  verbose: 1
+  model_save_path: models
+  model_sync_wandb: False
+  model_save_freq: 50000
