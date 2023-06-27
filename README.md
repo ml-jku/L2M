@@ -1,5 +1,5 @@
 # Learning to Modulate pre-trained Models in RL
-[![arXiv](https://img.shields.io/badge/arXiv-X-b31b1b.svg)](X)
+[![arXiv](https://img.shields.io/badge/arXiv-2306.14884-b31b1b.svg)](https://arxiv.org/abs/2306.14884)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Thomas Schmied<sup>**1**</sup>, Markus Hofmarcher<sup>**2**</sup>, Fabian Paischer<sup>**1**</sup>, Razvan Pacscanu<sup>**3,4**</sup>, Sepp Hochreiter<sup>**1,5**</sup> 
@@ -11,7 +11,7 @@ Thomas Schmied<sup>**1**</sup>, Markus Hofmarcher<sup>**2**</sup>, Fabian Paisch
 <sup>**5**</sup>Institute of Advanced Research in Artificial Intelligence (IARAI), Vienna, Austria
 
 This repository contains the source code for **"Learning to Modulate pre-trained Modesl in RL"** accepted at the [Reincarnating RL Workshop](https://reincarnating-rl.github.io/) at ICLR 2023.
-The paper is available [here](INSERT ARXIV). 
+The paper is available [here](https://arxiv.org/abs/2306.14884). 
 
 ![Multi-domain Decision Transformer (MDDT)](./figures/mddt.png) 
 
@@ -232,15 +232,14 @@ Example scripts for multi-gpu trianing on Slurm or PBS are available in `scripts
 Running on Slurm/PBS in a multi-node setup requires a little more care. Example scripts are provided in `scripts`.
 
 ## Citation
-If you find this useful, please consider citing our work. 
-
-Workshop paper: 
+If you find this useful, please consider citing our work: 
 ```
-@inproceedings{schmied2023learning,
-  title={Learning to Modulate pre-trained Models in RL},
-  author={Schmied, Thomas and Hofmarcher, Markus and Paischer, Fabian and Pascanu, Razvan and Hochreiter, Sepp},
-  booktitle={Workshop on Reincarnating Reinforcement Learning at ICLR}
-  year={2023},
-  url={https://openreview.net/forum?id=Us6BtPZGei3}
+@article{schmied2023learning,
+      title={Learning to Modulate pre-trained Models in RL}, 
+      author={Thomas Schmied and Markus Hofmarcher and Fabian Paischer and Razvan Pascanu and Sepp Hochreiter},
+      year={2023},
+      eprint={2306.14884},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
 }
 ```
