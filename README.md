@@ -10,7 +10,7 @@ Thomas Schmied<sup>**1**</sup>, Markus Hofmarcher<sup>**2**</sup>, Fabian Paisch
 <sup>**4**</sup>UCL\
 <sup>**5**</sup>Institute of Advanced Research in Artificial Intelligence (IARAI), Vienna, Austria
 
-This repository contains the source code for **"Learning to Modulate pre-trained Modesl in RL"** accepted at the [Reincarnating RL Workshop](https://reincarnating-rl.github.io/) at ICLR 2023.
+This repository contains the source code for **"Learning to Modulate pre-trained Models in RL"** accepted at the [Reincarnating RL Workshop](https://reincarnating-rl.github.io/) at ICLR 2023.
 The paper is available [here](https://arxiv.org/abs/2306.14884). 
 
 ![Multi-domain Decision Transformer (MDDT)](./figures/mddt.png) 
@@ -226,7 +226,7 @@ On Slurm, executing `torchrun` on a single node works alike. E.g., to run on 2 G
 source activate mddt
 python main.py -m hydra/launcher=torchrun hydra.launcher.nproc_per_node=2 [...]
 ```
-Example scripts for multi-gpu trianing on Slurm or PBS are available in `scripts`.
+Example scripts for multi-gpu training on Slurm or PBS are available in `scripts`.
 
 ### Multi-node training
 Running on Slurm/PBS in a multi-node setup requires a little more care. Example scripts are provided in `scripts`.
