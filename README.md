@@ -10,7 +10,7 @@ Thomas Schmied<sup>**1**</sup>, Markus Hofmarcher<sup>**2**</sup>, Fabian Paisch
 <sup>**4**</sup>UCL\
 <sup>**5**</sup>Institute of Advanced Research in Artificial Intelligence (IARAI), Vienna, Austria
 
-This repository contains the source code for **"Learning to Modulate pre-trained Models in RL"** accepted at the [Reincarnating RL Workshop](https://reincarnating-rl.github.io/) at ICLR 2023.
+This repository contains the source code for **"Learning to Modulate pre-trained Models in RL"** accepted at NeurIPS 2023.
 The paper is available [here](https://arxiv.org/abs/2306.14884). 
 
 ![Multi-domain Decision Transformer (MDDT)](./figures/mddt.png) 
