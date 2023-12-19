@@ -234,12 +234,12 @@ Running on Slurm/PBS in a multi-node setup requires a little more care. Example 
 ## Citation
 If you find this useful, please consider citing our work: 
 ```
-@article{schmied2023learning,
-      title={Learning to Modulate pre-trained Models in RL}, 
+@inproceedings{
+      schmied2023learning,
+      title={Learning to Modulate pre-trained Models in {RL}},
       author={Thomas Schmied and Markus Hofmarcher and Fabian Paischer and Razvan Pascanu and Sepp Hochreiter},
+      booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
       year={2023},
-      eprint={2306.14884},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+      url={https://openreview.net/forum?id=aIpGtPwXny}
 }
 ```
