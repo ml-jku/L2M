@@ -170,6 +170,13 @@ wget --recursive --no-parent --no-host-directories --cut-dirs=2 -R "index.html*"
 # DMControl
 wget --recursive --no-parent --no-host-directories --cut-dirs=2 -R "index.html*" https://ml.jku.at/research/l2m/dm_control_1M
 ```
+The datasets are also available on the Huggingface hub. Download using the `huggingface-cli`: 
+```
+# Meta-World
+huggingface-cli download ml-jku/meta-world --local-dir=./meta-world --repo-type dataset
+# DMControl
+huggingface-cli download ml-jku/dm_control --local-dir=./dm_control --repo-type dataset
+```
 The framework also supports Atari, D4RL, and visual DMControl datasets. 
 For [Atari](src/data/atari/README.md) and [visual DMControl](src/data/dm_control/README.md), we refer to the respective READMEs.
 
@@ -234,12 +241,11 @@ Running on Slurm/PBS in a multi-node setup requires a little more care. Example 
 ## Citation
 If you find this useful, please consider citing our work: 
 ```
-@inproceedings{
-      schmied2023learning,
-      title={Learning to Modulate pre-trained Models in {RL}},
-      author={Thomas Schmied and Markus Hofmarcher and Fabian Paischer and Razvan Pascanu and Sepp Hochreiter},
-      booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-      year={2023},
-      url={https://openreview.net/forum?id=aIpGtPwXny}
+@article{schmied2024learning,
+  title={Learning to Modulate pre-trained Models in RL},
+  author={Schmied, Thomas and Hofmarcher, Markus and Paischer, Fabian and Pascanu, Razvan and Hochreiter, Sepp},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
 }
 ```
